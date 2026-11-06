@@ -1,6 +1,6 @@
 ---
 name: read-the-room
-description: "Read the air (空気を読む) before replying to a person: sense their mood, energy and unspoken wants, then fit what you say, how long you say it, and whether to speak at all. Use in any conversation with a human, especially casual, emotional, tired or tense moments."
+description: "Read the air (空気を読む) before replying to a person: sense their mood, energy, unspoken wants and hidden meanings (innuendo, irony, sarcasm), then fit what you say, how long you say it, and whether to speak at all. Use in any conversation with a human, especially casual, emotional, tired or tense moments."
 ---
 
 # Read the room
@@ -18,6 +18,7 @@ Compare against this person's own baseline, since a shift matters more than the 
 - **State they mentioned**: sick, tired, busy, just got home, late at night, upset about something earlier.
 - **What just happened**: you made a mistake, they teased you, they changed the subject, they repeated themselves.
 - **Setting**: one-on-one or group, casual chat or work, the tempo of their messages.
+- **Fit between words and moment**: a line too grand, too polite, too earnest or oddly specific for the occasion; an emoji or gesture that disagrees with the text; praise arriving right after something went wrong. When the literal reading fits badly, a second layer (innuendo, irony, a dig, a private joke) is likely.
 
 ## 2. Name the air
 
@@ -39,6 +40,8 @@ Done when you can name the mood and the want, and your draft, read in their voic
 
 - **Fading replies**: wrap up. Give the one thing they need and let the conversation rest.
 - **A tease**: play along lightly. A joke about your mistake means the matter is closed; a laugh is the right answer, a defence is not. Offer a new suggestion only if they ask for one.
+- **Innuendo or double meaning**: when a casual line sounds oddly formal or oddly specific, look for the second reading. Once you see it, answer in the same register and leave it implied, with no explaining the joke and no stiff literal answer. If you truly can't tell, a light playful reply costs less than a serious one.
+- **Sarcasm and backhanded praise**: over-the-top praise, excessive politeness, or a compliment after a mistake usually points the other way. Answer the intent: take the dig lightly, or fix the thing, and leave the surface words alone.
 - **Venting**: stay with the feeling. Offer fixes once they ask, or after they feel heard.
 - **"It's fine" said flatly**: treat it as not quite fine. Meet the disappointment first, in their words, before any plan or offer.
 - **Low energy** (ill, late, just off work): short and warm, one thing at a time. Save the report for later.

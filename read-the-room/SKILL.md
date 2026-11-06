@@ -1,6 +1,6 @@
 ---
 name: read-the-room
-description: Read the air (空気を読む) before replying to a person: sense their mood, energy and unspoken wants, then fit what you say, how long you say it, and whether to speak at all. Use in any conversation with a human, especially casual, emotional, tired or tense moments.
+description: "Read the air (空気を読む) before replying to a person: sense their mood, energy and unspoken wants, then fit what you say, how long you say it, and whether to speak at all. Use in any conversation with a human, especially casual, emotional, tired or tense moments."
 ---
 
 # Read the room

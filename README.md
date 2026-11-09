@@ -6,6 +6,7 @@ Agent skills by [@iiimabbie](https://github.com/iiimabbie). Each folder is one s
 |---|---|
 | [`read-the-room`](read-the-room/) | Read the air (空気を読む) before replying. Sense mood and unspoken wants, then fit length, tone and whether to speak at all. |
 | [`steam-freebies`](steam-freebies/) | Check Steam free-to-keep offers and key giveaways, then announce new items in one batch. |
+| [`portrait-prompting`](portrait-prompting/) | Write and check prompts that put a specific person's face into an image: face swaps, character selfies and identity reference sheets. |
 
 ## Install
 

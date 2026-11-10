@@ -17,6 +17,16 @@ git clone https://github.com/iiimabbie/skills
 cp -r skills/read-the-room ~/.claude/skills/
 ```
 
+## Schedule
+
+`read-the-room` and `portrait-prompting` load on demand and need no schedule. `steam-freebies` is meant to run as a recurring job: have your agent's scheduler (or cron) start a run once a day with a prompt like the one below, and post the result where people should see it.
+
+```text
+Run the steam-freebies skill: read its SKILL.md, check for new offers with a fixed --state directory, announce new ones in one message, then commit that batch. Stay quiet when there is nothing new.
+```
+
+Daily is enough: offers usually last several days, and the state directory keeps already-announced offers from repeating. Keep the same `--state` for every run.
+
 ## License
 
 MIT

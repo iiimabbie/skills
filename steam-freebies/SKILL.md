@@ -1,6 +1,6 @@
 ---
 name: steam-freebies
-description: "Find new Steam free-to-keep games, DLC and third-party Steam key giveaways, then prepare a batch announcement. Use for a scheduled giveaway digest or a request to check current Steam freebies."
+description: "Find new Steam free-to-keep games, DLC and third-party Steam key giveaways, and wishlist or favourite-genre games at their all-time low, then prepare a batch announcement. Use for a scheduled giveaway or deal digest, or a request to check current Steam freebies or historical lows."
 ---
 
 # Steam freebies
@@ -37,3 +37,26 @@ node bin/check.mjs --commit
 ```
 
 Repeat any custom `--state` argument. This returns `{ "committed": <count> }` and clears the pending batch; it does not fetch offers. Commit only the batch being announced, and avoid another check between drafting and committing because it replaces `pending.json`. If commit fails, report the failure; a later run may repeat the offers.
+
+## All-time lows
+
+`bin/lows.mjs` takes the same `--state`, `--cc` and `--lang` options and keeps its own `lows-seen.json` and `lows-pending.json` in that directory. It reads `lows-config.json` from there:
+
+```json
+{ "wishlist": [{ "appid": 413150, "name": "Stardew Valley" }], "owned": [{ "appid": 1222670, "name": "The Sims 4" }], "tags": [87918, 10235, 552282] }
+```
+
+- `wishlist_lows`: wishlist games on sale at or below their all-time low, not announced before.
+- `wishlist_sales`: wishlist games on sale above their low, every run; mention big discounts as ordinary sales.
+- `picks`: up to 8 games on sale at their all-time low that carry at least two of `tags`, are at least 80% positive and are neither owned nor wishlisted. Pick the ones that fit the reader best, using `genres` and `intro`.
+- `errors`: as above. CheapShark blocks the client for about an hour after a 429; the script spaces requests one second apart, so do not loop or retry it.
+
+`usd_price` and `usd_all_time_low` come from CheapShark (US region, lowest across stores, so a past giveaway makes the low 0). `price` and `discount_percent` are the Steam store price for `--cc`. Say "all-time low" in terms of the US price; do not claim the local price is a local record.
+
+For each item give the title, local price and discount, one sentence on why it fits, and `url`. Commit after drafting, exactly as for freebies:
+
+```sh
+node bin/lows.mjs --commit
+```
+
+An announced price is forgotten after 30 days, so a later sale at the same price is announced again.
